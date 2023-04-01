@@ -1,0 +1,137 @@
+/*
+ * Dialog Stylesheet file.
+ */
+
+.theme {
+    master-color: grey;
+    -fx-background-color: lightgrey; /* need to match html_main.css therefore CANNOT do ... derive(master-color, 70%); */
+    -fx-font-size: 14px; 
+    /* below are for border; ref:http://pixelduke.wordpress.com/2012/09/09/style-a-stage-in-a-minimalist-way/ */
+    /*-fx-border-insets: 23;*/
+    /*-fx-background-insets: 23;*/
+    /*-fx-background-radius: 6;*/
+    /*-fx-border-radius: 6;*/
+    -fx-border-color: gray;
+    -fx-border-style: solid;
+    -fx-border-width: 1;
+    /*-fx-effect: dropshadow(three-pass-box, rgba(100, 100, 100, 1), 24, 0.5, 0, 0);*/
+}
+
+.split-pane {
+    -fx-padding: 0;
+    -fx-border-width: 0;
+    -fx-background-color: derive(master-color, 100%);
+}
+
+/*
+ * some example of button styles ... http://fxexperience.com/2011/12/styling-fx-buttons-with-css/
+ */
+.button {
+    -fx-background-color:
+        linear-gradient(
+        derive(master-color, 120%), 
+        derive(master-color, 90%)
+        ),
+        radial-gradient(
+        center 50% -40%, 
+        radius 180%, 
+        derive(master-color, 95%) 55%, 
+        derive(master-color, 75%) 55%
+        );
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: derive(master-color, -60%);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.55) , 5, 0.0 , 0 , 1 );
+}
+
+.button:hover {
+    -fx-background-color:
+        linear-gradient(
+        derive(master-color, 100%), 
+        derive(master-color, 70%)
+        ),
+        radial-gradient(
+        center 50% -40%, 
+        radius 180%, 
+        derive(master-color, 85%) 55%, 
+        derive(master-color, 65%) 55%
+        );
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.55) , 5, 0.0 , 0 , 1 );
+}
+
+.button:focused {
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.55) , 13, 0.0 , 0 , 1 );
+}
+
+.button:pressed {
+    -fx-background-color:
+        linear-gradient(
+        derive(master-color, 80%), 
+        derive(master-color, 40%)
+        ),
+        radial-gradient(
+        center 50% -40%, 
+        radius 180%, 
+        derive(master-color, 65%) 55%, 
+        derive(master-color, 45%) 55%
+        );
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.55) , 13, 0.0 , 0 , 1 );
+}
+
+.context-menu {
+    -fx-background-color: lightgrey;
+}
+
+.menu-item .label {
+    -fx-text-fill: derive(master-color, -60%);
+}
+
+.menu-item:focused {
+    -fx-background-color: darkgray;
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: black;
+}
+
+.darkList {
+    -fx-background-color: derive(master-color, -60%);
+}
+
+.darkList .list-cell {
+    -fx-padding: 6 0 0 13;
+    -fx-background-color: derive(master-color, -60%);
+    -fx-text-fill: lightgrey;
+}
+
+.darkList .list-cell:focused {
+    -fx-text-fill: white;
+}
+
+.table-view {
+    -fx-border-width: 0;
+    -fx-border-color: red;
+}
+
+.text-area, .text-field {
+    -fx-background-radius: 4;
+    -fx-border-radius: 4;
+}
+
+.text-area {
+    -fx-padding: 2;
+}
+
+.text-field {
+    -fx-padding: 3 6 3 6;
+}
+
+.label {
+    -fx-text-fill: derive(master-color, -20%);
+    -fx-font-size: 12px;
+}
+
+.label.title {
+    -fx-font-size: 36px;
+}

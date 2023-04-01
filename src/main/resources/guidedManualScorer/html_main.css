@@ -1,0 +1,12 @@
+/* 
+    Document   : html_main
+    Created on : May 24, 2013, 12:08:05 PM
+    Author     : samuelc
+    Description:
+        for html pages
+*/
+
+body {
+    background:lightgray /* make sure it matches main.css !!!*/
+}
+

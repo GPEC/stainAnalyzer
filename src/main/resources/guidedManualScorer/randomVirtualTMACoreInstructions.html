@@ -1,0 +1,45 @@
+<!--
+Instructions to guided random virtual core manual scoring
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="html_main.css" type="text/css"/>
+    </head>
+    <body style="background: lightgray">
+        <h3>Instructions: guided manual scoring via random intratumoral circles</h3>
+        <hr>
+        <ol>
+            <li>Please scan the slide of interest using Aperio scanner</li>
+            <li>Please use Aperio ImageScope to open the virtual slide file (*.svs).
+                <ul>
+                    <li>Mark/select the tumor area using annotation pen tool, rectangle tool or ellipse tool.</li>
+                    <li>Please note: <b>negative pen tool NOT supported</b></li>
+                    <li>Please save the annotation file (using the default name)</li>
+                </ul>
+            </li>
+            <li>This application will then generate five intratumoral circles (virtual TMA cores), randomly distributed among the selected tumor area(s).  
+                Please count 100 tumor nuclei from each of the five intratumoral circles (i.e. a total of 500 nuclei for five intratumoral circles).
+                Please note: if during the scoring if at least one of the intratumoral circles has less than 100 tumor nuclei, please count all tumor nuclei on
+                the current circle and proceed to the next circle.  You can safely ignore the message to ask you to score from the top/bottom of the circle since all
+                tumor nuclei on this particular circle will be counted.  Additional random intratumoral circle(s) will be generated until at least 500 nuclei is counted.
+            </li>
+            <li>This application will then assess the heterogeneity of the Ki67 expression based on the scores (i.e. positive/negative nuclei count) on the 
+                five intratumoral circles.  Sufficiently high heterogeneity will trigger (up to 20) additional intratumoral circles being generated and presented 
+                for scoring.  Each core would require 100 tumor nuclei being counted in the same fashion as the initial five.
+            </li>
+            <li>System requirements
+                <ul>
+                    <li>Windows XP or higher</li>
+                    <li>Aperio ImageScope (version 12 or higher)</li>
+                    <li>Minimum screen resolution: 1024 x 768</li>
+                </ul>
+            </li>
+            <li>Please verify all system requirements and perform all tasks mentioned above.  
+                When you are ready, please click on the "OK" button below to continue.  
+                You will be asked to select the Aperio virtual slide file (*.svs).</li>
+        </ol>
+    </body>
+</html>
