@@ -16,9 +16,9 @@ To score Ki67 using the stainAnalyzer:
 
 1. Annotate tumor area using Aperio ImageScope (https://www.leicabiosystems.com/en-ca/digital-pathology/manage/aperio-imagescope/)
 
-- The tumor area can be specified using the "Pen Tool" (free hand), "Rectangle Tool" or "Eclipse Tool".  When using the "Pen Tool", please be sure that the region closes off (i.e. the line front and end join together.  If the front and end does not join, stainAnalyzer will not be able to identify the selected region.)
-- Multiple tumor areas can be selected.  However, the tumor area must be large enough to allow virtual core (1-mm x 1-mm square) to be selected.
-- Please save the annotation (xml file)
+    - The tumor area can be specified using the "Pen Tool" (free hand), "Rectangle Tool" or "Eclipse Tool".  When using the "Pen Tool", please be sure that the region closes off (i.e. the line front and end join together.  If the front and end does not join, stainAnalyzer will not be able to identify the selected region.)
+    - Multiple tumor areas can be selected.  However, the tumor area must be large enough to allow virtual core (1-mm x 1-mm square) to be selected.
+    - Please save the annotation (xml file)
 
 2. Execute stainAnalyzer and please follow the instructions presented.
 
