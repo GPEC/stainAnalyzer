@@ -4,3 +4,4 @@ The foldoer "GPEC_stainAnalyzer_win7_64_BCCA_20150319" contains installer "GPEC_
 
 The installer was built using Windows 7.  However, the program is compatible with Windows 8, 10 and 11.
 
+The installer is NOT compatible with Mac OS or Linux.
